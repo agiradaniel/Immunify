@@ -2,7 +2,7 @@ import './App.css';
 import Landing from './components/pages/landing';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SignUp from './components/pages/signUp';
-import SignUpTwo from './components/pages/signUpTwo';
+import SignUpTwo from './components/pages/experimental/signUpTwo';
 
 function App() {
 

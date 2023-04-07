@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../images/logo.png';
-import Mother from '../images/signUp.png';
+import Logo from '../../images/logo.png';
+import Mother from '../../images/signUp.png';
 import { Button } from 'react-bootstrap';
-import Microsoft from '../images/microsoft.png';
+import Microsoft from '../../images/microsoft.png';
 import './signUpTwo.css'
 
 const SignUpTwo = () => {
