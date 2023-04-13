@@ -11,9 +11,9 @@ const LogIn = () => {
   <> 
     <div className='loginMainBody d-flex flex-direction-row'>
       <div style={{width:"50%",background:"#8245D0"}}>
-        <Link to="/"><img src={Logo} alt="Logo" style={{margin:"20px 0 0 110px"}}/></Link>
+        <Link to="/"><img src={Logo} alt="Logo" style={{margin:"20px 0 0 100px"}}/></Link>
 
-                <form style={{color:"white", width:"50%", margin:"auto", fontFamily:"Inter"}}>
+                <form style={{color:"white", width:"55%", margin:"auto", fontFamily:"Inter"}}>
 
                  <h5 className='mb-2'>WELCOME BACK 😊</h5>
 
