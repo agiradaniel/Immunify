@@ -4,7 +4,7 @@ import Logo from '../images/logo.png';
 import Father from '../images/father.png';
 import { Button } from 'react-bootstrap';
 import Microsoft from '../images/microsoft.png';
-import './login.css'
+import './styles/login.css'
 
 const LogIn = () => {
   return (
@@ -35,7 +35,7 @@ const LogIn = () => {
                         </span>     
                         <span>Forgot Password?</span>
                     </div>
-                    <Button type="submit" className="formBtn" style={{marginTop:60, width:"100%",height: "39px",backgroundColor:"#FFFFFF", color:"#8133D0",fontSize:"14px", fontWeight:"700",border:"none"}} >Sign In</Button>
+                    <Button className="formBtn" style={{marginTop:60, width:"100%",height: "39px",backgroundColor:"#FFFFFF",fontSize:"14px", fontWeight:"700",border:"none"}} ><Link to="/dashboard" style={{textDecoration:"none", color:"#8133D0"}}>Sign In</Link></Button>
                     <Button type="submit" className="formBtn" style={{marginTop:30, width:"100%", height: "39px", backgroundColor:"#8133D0",fontSize:"14px", fontWeight:"700", border:"1px solid white"}}><img src={Microsoft} alt="microsoft" style={{marginRight:"8px"}}/>Sign in With Microsoft</Button>
 
                     <p className="small fw-bold text-center" style={{marginTop:85, color:"#C4C4C4"}}>Don't have an account? <Link to="/signup"

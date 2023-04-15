@@ -13,7 +13,7 @@ import City from '../images/city.png';
 import Search from '../images/search.png';
 import Drop from '../images/dropdown.png';
 import { Link } from 'react-router-dom';
-import './landing.css'
+import './styles/landing.css'
 
 
 const Immunify = () => {
