@@ -4,7 +4,7 @@ import './styles/dashboard.css'
 import { Link } from 'react-router-dom';
 import DashIcon from '../images/dashboardIcon.png';
 import AppointmentIcon from '../images/appointmentsIcon.png';
-import ChatIcon from '../images/chatIcon.png';
+import ChatIcon from '../images/Syringe.png';
 import HelpIcon from '../images/helpIcon.png';
 import SettingsIcon from '../images/settingsIcon.png';
 import SearchAvatar from '../images/SearchAvatar.png';
@@ -14,6 +14,9 @@ import Plus from '../images/Plus.png';
 import Clinic from '../images/Clinic.png';
 import Doctor from '../images/Doctor.png';
 import LineChart from '../images/LineChart.png';
+import Document from '../images/Document.png';
+import Avatar from '../images/avatar.png';
+
 
 const Dashboard = () => {
   return (
@@ -95,6 +98,15 @@ const Dashboard = () => {
                   </div>
 
                   <div style={{height:"2px", backgroundColor:"#DCDCDC", width:"98%", margin:"20px auto"}}></div>
+
+                  <div style={{display:"flex", justifyContent:"space-around", paddingTop:"5px", color:"rgba(0, 0, 0, 0.4)"}}>
+                    <span><img src={Avatar} alt="avatar"/> Joseph K.B</span>
+                    <span>Male</span>
+                    <span>Rosemary Wairimu</span>
+                    <span>Chicken Pox</span>
+                    <span>28/03/23</span>
+                    <img src={Document} alt="Icon"/>
+                  </div>
 
               </div>
 

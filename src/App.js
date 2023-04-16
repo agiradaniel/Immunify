@@ -6,6 +6,9 @@ import SignUpTwo from './components/pages/experimental/signUpTwo';
 import LogIn from './components/pages/login';
 import Dashboard from './components/pages/dashboard';
 import Records from './components/pages/records';
+import Vaccines from './components/pages/vaccines';
+import Help from './components/pages/help';
+import Settings from './components/pages/settings';
 
 function App() {
 
@@ -19,6 +22,9 @@ function App() {
        <Route path="/signuptwo" element={<SignUpTwo/>}/>
        <Route path="/dashboard" element={<Dashboard/>}/>
        <Route path="/records" element={<Records/>}/>
+       <Route path="/vaccineTypes" element={<Vaccines/>}/>
+       <Route path="/help" element={<Help/>}/>
+       <Route path="/settings" element={<Settings/>}/>
        
       </Routes>
     </div>

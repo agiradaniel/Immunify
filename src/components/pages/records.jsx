@@ -1,19 +1,21 @@
 import React from 'react';
 import Logo from '../images/logo.png';
-import './styles/dashboard.css'
+import './styles/records.css'
 import { Link } from 'react-router-dom';
-import DashIcon from '../images/dashboardIcon.png';
-import AppointmentIcon from '../images/appointmentsIcon.png';
-import ChatIcon from '../images/chatIcon.png';
+import DashIcon from '../images/DashIconWhite.png';
+import AppointmentIcon from '../images/AppointmentsIconPurple.png';
+import ChatIcon from '../images/Syringe.png';
 import HelpIcon from '../images/helpIcon.png';
 import SettingsIcon from '../images/settingsIcon.png';
 import SearchAvatar from '../images/SearchAvatar.png';
 import NotificationAvatar from '../images/Notification.png';
 import ProfileAvatar from '../images/profile.png';
-import Plus from '../images/Plus.png';
-import Clinic from '../images/Clinic.png';
-import Doctor from '../images/Doctor.png';
-import LineChart from '../images/LineChart.png';
+import Children from '../images/Children.png';
+import DatabaseView from '../images/DatabaseView.png';
+import Hospital from '../images/Hospital.png';
+import { Button } from 'react-bootstrap';
+import Document from '../images/Document.png';
+import Avatar from '../images/avatar.png';
 
 const Records = () => {
   return (
@@ -57,44 +59,56 @@ const Records = () => {
             </div>
           </div>
 
+
           <div style={{backgroundColor:"#DCDCDC",height:"89vh"}}>
+
+              <h4 style={{padding:"40px 0 0 85px"}}>
+                  Immunization Records
+              </h4>
               <div style={{display:"flex", justifyContent:"space-around"}}>
-                <div className='dashAction d-flex'>
-                  <img src={Plus} alt="Plus Icon" style={{width:"40px",height:"40px", margin:"10px 8px"}}/>
-                  <p>Schedule a clinic <br/> appointment</p>
+                <div className='recAction d-flex'>
+                  <img src={Children} alt="Plus Icon" style={{width:"40px",height:"40px", margin:"10px 8px"}}/>
+                  <p>4 <br/> No of children</p>
                 </div>
-                <div className='dashAction d-flex'>
-                  <img src={Clinic} alt="Clinic" style={{width:"40px",height:"40px", margin:"10px 10px"}}/>
-                  <p>Request a<br/> home visit</p>
+                <div className='recAction d-flex'>
+                  <img src={DatabaseView} alt="Clinic" style={{width:"40px",height:"40px", margin:"10px 10px"}}/>
+                  <p>13<br/> No of immunization records</p>
                 </div>
-                <div className='dashAction d-flex'>
-                  <img src={Doctor} alt="Doctor" style={{width:"40px",height:"40px", margin:"10px 10px"}}/>
-                  <p>Speak with a <br/> medical expert</p>
+                <div className='recAction d-flex'>
+                  <img src={Hospital} alt="Doctor" style={{width:"40px",height:"40px", margin:"10px 10px"}}/>
+                  <p>20 <br/> Total No of Visits</p>
                 </div>
               </div>
 
-              <div style={{width:"86%", height:"250px", backgroundColor:"white", margin:"40px auto", borderRadius:"15px"}}>
-                <h5 style={{padding:"10px 0 0 25px"}}>Patient's activities</h5>
-                <div style={{textAlign:"center"}}><img src={LineChart} alt="Line Chart" style={{width:"80%", height:"180px"}}/></div>
-              </div>
-
-              <div style={{width:"86%", height:"250px", backgroundColor:"white", margin:"40px auto", borderRadius:"15px"}}>
-                  
-                  <div className='d-flex justify-content-between' style={{margin:"10px auto", width:"92%", paddingTop:"10px"}}>
-                    <h4>Overview</h4>
-                    <span style={{color:"#DCDCDC"}}>View all</span>
+              <div style={{width:"86%", minHeight:"450px", backgroundColor:"white", margin:"40px auto", borderRadius:"15px"}}>
+                
+                <div className='d-flex justify-content-between' style={{padding:"20px 20px 0 20px"}}>
+                  <h5>All Immunization Records</h5>
+                  <div>
+                    <Button type="submit" className="formBtn" style={{width:"150px", height: "39px", backgroundColor:"#8133D0",fontSize:"14px", fontWeight:"700", borderRadius:"15px", border:"none"}}>Add a new record</Button>
+                    <Button type="submit" className="formBtn" style={{width:"120px", height: "39px", backgroundColor:"white", color:"black", fontSize:"14px", fontWeight:"700", borderRadius:"15px", marginLeft:"20px", border:"1px solid #DCDCDC"}}>Export</Button>
                   </div>
-                  
-                  <div style={{display:"flex", justifyContent:"space-around", paddingTop:"5px"}}>
+                </div>  
+
+                <div style={{display:"flex", justifyContent:"space-between", padding:"20px 20px 0 20px", marginTop:"20px"}}>
                     <span>Child's name</span>
                     <span>Gender</span>
                     <span>Doctor's name</span>
                     <span>Immunization Type</span>
                     <span>Date</span>
                     <span>Report</span>
-                  </div>
+                </div>
 
-                  <div style={{height:"2px", backgroundColor:"#DCDCDC", width:"98%", margin:"20px auto"}}></div>
+                <div style={{height:"2px", backgroundColor:"#DCDCDC", width:"98%", margin:"20px auto"}}></div>
+
+                <div style={{display:"flex", justifyContent:"space-around", paddingTop:"5px", color:"rgba(0, 0, 0, 0.4)"}}>
+                    <span><img src={Avatar} alt="avatar"/> Joseph K.B</span>
+                    <span>Male</span>
+                    <span>Rosemary Wairimu</span>
+                    <span>Chicken Pox</span>
+                    <span>28/03/23</span>
+                    <img src={Document} alt="Icon"/>
+                  </div>
 
               </div>
 

@@ -10,14 +10,12 @@
     line-height: 18px;
     padding-left:40px
 }
-.sideBarComponent:hover{
-    border: 1px dotted white;
-}
-.dashAction{
+
+.recAction{
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     width: 204px;
-    height: 59px;
+    height: 75px;
     margin-top:40px;
 }
